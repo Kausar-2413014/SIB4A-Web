@@ -1,8 +1,8 @@
 
-const UserAvatar = ({ className = "" }) => (
+const UserAvatar = ({ className = "", src = "user.svg" }) => (
     <div className={`w-9 h-9 rounded-full bg-white border-2 border-white shadow-sm flex items-center justify-center overflow-hidden ${className}`}>
         
-        <img src="user.svg" alt="user" className="w-5 h-5 text-gray-400" /> 
+        <img src= {src} alt="user avatar" className="w-full h-full object-cover" />
     </div>
 );
 
@@ -29,9 +29,9 @@ export default function TaskPage(){
     <p className="font-bold">In 3 days</p>
     <div className="absolute bottom-8 right-8">
     <div className="flex -space-x-3 items-center">
-                            <UserAvatar />
-                            <UserAvatar />
-                            <UserAvatar />
+                            <UserAvatar src="Pria 3.png"/>
+                            <UserAvatar src="wanita 2.jfif"/>
+                            <UserAvatar src="Pria 1.jfif"/>
                             <Badge text="9+" />
                     </div>
                 </div>
@@ -52,9 +52,9 @@ export default function TaskPage(){
 </div>
  <div className="absolute bottom-8 right-8">
     <div className="flex -space-x-3 items-center">
-                            <UserAvatar />
-                            <UserAvatar />
-                            <UserAvatar />
+                            <UserAvatar src="wanita 1.jfif"/>
+                            <UserAvatar src="wanita 3.jfif"/>
+                            <UserAvatar src="Pria 2.jfif"/>
                             <Badge text="3+" />
                     </div>
                 </div>
