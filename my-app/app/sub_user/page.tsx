@@ -1,3 +1,5 @@
+import Button1 from "./_component/button-1";
+import Detailcard from "./_component/detail-card";
 export default function user() {
     return(
 <section className="h-screen bg-gray-200 flex flex-col justify-center items-center">
@@ -53,10 +55,7 @@ export default function user() {
             </div>
             <div className="flex gap-4">
                 <img className="bg-white shadow-[0px_0px_100px_5px_rgba(0,0,250,10)] rounded-full w-12 p-2 " src="dots-vertical.svg"/>
-                <div className="bg-linear-to-l  from-purple-600 from-40% to-blue-600 w-full h-12 rounded-3xl flex justify-center items-center">
-                    <img className="w-7" src="mail.svg"/>
-                    <p>Massage</p>
-                </div>
+                <Button1/>
             </div>
       </section>
 </section>
