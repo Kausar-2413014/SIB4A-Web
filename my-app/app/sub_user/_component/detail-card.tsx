@@ -10,7 +10,7 @@ export default function Detailcard ({
   price: number;
 }) {
   return (
-    <div className="mt-2 text-black">
+              <div className="mt-2 text-black">
       <div className="flex gap-2 items-center   ">
         <img src={img} className="h-4 w-4" />
         <p>{title}</p>
